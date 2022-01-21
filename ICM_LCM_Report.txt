@@ -1,0 +1,50 @@
+Step 1:-
+The Barabasi–Albert model is one of several proposed models that generate scale-free networks.
+BA model implements growth and preferential attachment which exist widely in real networks.
+
+in the code for BA model networkx library used with 1009 random node.and 2 Number of edges to attach from a new node to existing nodes 
+Step 2:-
+plot the Degree distribution of BA Graph.
+Step 3:-
+Independent Cascade Model (ICM) is a stochastic information diffusion model where the information flows over the network through Cascade.
+Nodes can have two states Active and Inactive.
+
+1.implemented ICM(independent cascade model) passes paremeters as BA graph, random seed set of 15 node, probability(0.05 to 0.15) and simulation is 1000
+2.Getting neighbour node of new node
+3.Finding any node of neighbour can be activated then add them to new node 
+4.checking Duplicate nodes and removing them
+5.finally return the total active node after 1000 simulation in result.
+Step 4:-
+1.For Seed selection implemented Greedy on ICM, parameters as BA graph object and simulation.
+2.Find nodes with largest marginal gain
+3.Find nodes that are not yet in seed set to find biggest marginal gain
+4.Get the spread by calling ICM 
+4.Update the winning node and spread so far
+5.Add the selected node to the seed set
+6.finally Greedy on ICM output is total active node after 1000 simulation in result
+
+Step 5:-
+Linear threshold model used to find the behavior of influence propgation in social networks.
+1.implemented LTM(linear thresold model)passes as BA graph object,random seed set of 15 node,and simulation is 1000
+2.setting time limit 2
+3.computed the thresold value
+4.computed total weight
+5.cheaching total weight is greater than thrshold or not
+6.finally Greedy on ICM output is optimal seed set, estimated spread and elapes time in result
+
+Step 6:-
+1.For Seed selection implemented Greedy on LTM parameters as BA graph object and simulation.
+2.Find nodes with largest marginal gain
+3.Find nodes that are not yet in seed set to find biggest marginal gain
+4.Get the spread by calling LTM 
+4.Update the winning node and spread 
+5.Add the selected node to the seed set
+6.finally Greedy on LTM output is optimal seed set, estimated spread and elapes time in result
+
+
+
+
+
+
+
+    
